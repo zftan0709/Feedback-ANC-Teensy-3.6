@@ -1,3 +1,9 @@
+/*
+ * Feedback Active Noise Cancelling System
+ * Main ino file
+ * By ZhiFang Tan
+ */
+
 #include <arm_math.h>
 #include <ADC.h>
 #include <DMAChannel.h>
@@ -11,7 +17,7 @@ const int speakerPin = A21;
 const int32_t taps = 300;
 uint16_t samples[1];
 
-float32_t mu = 0.0001;  // Learning Rate
+float32_t mu = 0.0001;  // Step Size
 float32_t w[taps] ={  // Secondary Path
   0.000263,
   ...,

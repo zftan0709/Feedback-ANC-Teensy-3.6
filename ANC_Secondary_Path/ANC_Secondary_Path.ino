@@ -1,3 +1,9 @@
+/*
+ * Feedback Active Noise Cancelling System
+ * Secondary Acoustic Path Estimation
+ * By ZhiFang Tan
+ */
+
 #include <arm_math.h>
 #include <ADC.h>
 #include <DMAChannel.h>
